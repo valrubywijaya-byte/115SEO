@@ -1,5 +1,5 @@
-/* General Settings */
 
+/* INDONESIAN CULTURE WEBSITE*/
 * {
     box-sizing: border-box;
 }
@@ -10,287 +10,485 @@ html {
 
 body {
     margin: 0;
+
     font-family: Georgia, "Times New Roman", serif;
-    background-color: #eef3f0;
-    color: #183b3d;
+
+    background-color: #f4efe6;
+
+    color: #2d2926;
+
     line-height: 1.8;
 }
 
 
-/*Navigation*/
+/*NAVIGATION*/
 
 .navbar {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     padding: 20px 7%;
 
-    background-color: #123b3d;
-    color: #ffffff;
+    background-color: #171513;
 
-    box-shadow: 0 4px 16px rgba(18, 59, 61, 0.2);
+    color: white;
 
     position: sticky;
+
     top: 0;
 
     z-index: 1000;
 }
 
+
+/*Logo*/
+
 .logo {
+    font-family: Arial, sans-serif;
+
     font-size: 25px;
+
     font-weight: bold;
-    letter-spacing: 1px;
-    color: #f4b183;
+
+    letter-spacing: 2px;
+
+    color: #f5c66b;
 }
+
+
+/*Navigation links*/
 
 .nav-links {
     display: flex;
-    gap: 28px;
+
+    gap: 30px;
 
     list-style: none;
 
-    margin: 0;
     padding: 0;
+
+    margin: 0;
 }
 
 .nav-links a {
+    font-family: Arial, sans-serif;
+
+    color: white;
+
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 14px;
+
     text-transform: uppercase;
+
     letter-spacing: 1px;
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f4b183;
+    color: #f5c66b;
 }
 
 
-/* Hero Section */
+/*HERO*/
 
 .hero {
-    min-height: 620px;
+    min-height: 650px;
 
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
 
-    text-align: left;
+    align-items: flex-end;
+
+    position: relative;
 
     background-image:
         linear-gradient(
-            rgba(10, 45, 47, 0.78),
-            rgba(10, 45, 47, 0.18)
+            to top,
+            rgba(20, 14, 10, 0.9),
+            rgba(20, 14, 10, 0.15)
         ),
-        url("https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=1600&q=80");
+        url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85");
 
     background-size: cover;
+
     background-position: center;
+}
+
+
+/*Hero text*/
+
+.hero-content {
+    max-width: 900px;
+
+    padding: 80px 8%;
 
     color: white;
 }
 
-.hero-content {
-    max-width: 760px;
-    padding: 80px 8%;
+.hero-content::before {
+    content: "CULTURE • TRADITION • IDENTITY";
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #f5c66b;
+
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 7vw, 86px);
+    font-size: clamp(45px, 7vw, 82px);
+
     line-height: 1.05;
+
     margin: 0 0 20px;
+
+    max-width: 800px;
 }
 
 .hero p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+
     font-size: 18px;
-    max-width: 560px;
+
+    max-width: 550px;
+
     margin-bottom: 30px;
 }
+
+
+/*Hero button*/
 
 .button {
     display: inline-block;
 
     padding: 13px 28px;
 
-    background-color: #f4b183;
-    color: #183b3d;
+    background-color: #c92c25;
+
+    color: white;
 
     text-decoration: none;
 
-    border-radius: 2px;
+    font-family: Arial, sans-serif;
 
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.2s ease;
+
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+
+    transition: 0.3s;
 }
 
 .button:hover {
-    background-color: #ffffff;
+    background-color: #a9211d;
+
     transform: translateY(-2px);
 }
 
 
-/* Main Content */
+/*MAIN CONTENT*/
 
 main {
-    max-width: 1180px;
+    max-width: 1200px;
 
     margin: 0 auto;
 
-    padding: 90px 7%;
+    padding: 90px 6%;
 }
+
+
+/*ARTICLE*/
 
 article {
     background-color: transparent;
+
     padding: 0;
+
+    box-shadow: none;
 }
 
+
+/*Section headings*/
+
 h2 {
-    color: #d4664f;
+    position: relative;
+
+    color: #a52520;
+
     font-size: 38px;
+
     line-height: 1.2;
-    margin: 35px 0 25px;
+
+    margin-top: 20px;
+
+    margin-bottom: 25px;
+
     padding: 0;
-    border: 0;
+
+    border: none;
 }
+
+
+/*Small decorative line*/
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    background-color: #f0b84b;
+
+    margin-top: 12px;
+}
+
+
+/*Paragraphs*/
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+
     font-size: 16px;
+
     line-height: 1.9;
 }
 
+
+/*First paragraph of article*/
+
 #about > p:first-of-type {
-    max-width: 900px;
-    font-family: Georgia, "Times New Roman", serif;
     font-size: 21px;
-    color: #31595a;
+
+    line-height: 1.8;
+
+    max-width: 900px;
+
+    color: #4a4039;
 }
 
 
-/* Images */
+/*FOOD IMAGE*/
 
 .content-image {
     width: 100%;
 
-    height: 440px;
+    height: 450px;
 
     object-fit: cover;
 
+    margin: 20px 0 25px;
+
     border-radius: 0;
 
-    margin: 15px 0;
+    display: block;
+
+    filter: saturate(0.9);
 }
+
+
+/*CULTURAL SECTIONS*/
 
 #food,
-#nature,
-#culture {
+#traditions,
+#diversity {
+    position: relative;
+
     margin-top: 100px;
 }
 
 
-/* Map */
+/*Add visual numbering*/
+#food::before,
+#traditions::before,
+#diversity::before {
+    font-family: Arial, sans-serif;
 
-.map-section {
-    margin-top: 100px;
-    padding: 55px 6%;
-    background-color: #f4b183;
-    color: #183b3d;
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #c92c25;
 }
 
-.map-section h2 {
-    color: #183b3d;
+
+/* SPECIAL CULTURE QUOTE*/
+
+#diversity {
+    background-color: #171513;
+
+    color: white;
+
+    padding: 55px;
+
+    margin-top: 100px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#diversity h2 {
+    color: #f5c66b;
+
+    margin-top: 15px;
+}
+
+#diversity p {
+    color: #eeeeee;
+
+    max-width: 850px;
+}
+
+
+/* VIDEO SECTION*/
+
+.video-section {
+    margin-top: 100px;
+
+    padding: 70px 6%;
+
+    background-color: #211d1a;
+
+    color: white;
+
+    position: relative;
+}
+
+
+/*Video heading*/
+
+.video-section h2 {
+    color: #f5c66b;
+
     margin-top: 0;
 }
 
-.map-container {
-    position: relative;
-    width: 100%;
-    height: 420px;
-    margin-top: 30px;
-    overflow: hidden;
-    border: 8px solid #ffffff;
-}
+.video-section p {
+    color: #dddddd;
 
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-.map-link {
-    display: inline-block;
-    margin-top: 18px;
-    color: #183b3d;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    max-width: 650px;
 }
 
 
-/* Video */
-
-.video-section {
-    margin-top: 40px;
-    background-color: #183b3d;
-    padding: 70px 7%;
-
-    text-align: center;
-    color: #ffffff;
-}
-
-.video-section h2 {
-    color: #f4b183;
-}
+/*Video container*/
 
 .video-container {
     position: relative;
 
     width: 100%;
 
+    max-width: 1000px;
+
+    margin: 40px auto 0;
     padding-bottom: 56.25%;
 
     height: 0;
 
     overflow: hidden;
 
-    margin-top: 25px;
+    background-color: black;
 }
 
 .video-container iframe {
     position: absolute;
 
-    top: 0;
-    left: 0;
-
     width: 100%;
+
     height: 100%;
 
-    border: 0;
+    top: 0;
+
+    left: 0;
+
+    border: none;
 }
 
 
-/* Footer */
+/* MAP SECTION*/
+
+.map-section {
+    margin-top: 100px;
+    padding: 60px 6%;
+    background-color: #f5c66b;
+    color: #171513;
+}
+
+.map-section h2 {
+    color: #171513;
+    margin-top: 0;
+}
+
+.map-section h2::after {
+    background-color: #c92c25;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 500px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    border: 8px solid #171513;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #c92c25;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+/*FOOTER*/
 
 footer {
-    text-align: center;
-
-    padding: 45px 20px;
-
-    background-color: #d4664f;
+    background-color: #c92c25;
 
     color: white;
 
-    margin-top: 60px;
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    margin: 5px;
 }
 
 
-/* Responsive Design */
+/*RESPONSIVE DESIGN*/
 
 @media (max-width: 700px) {
+
+    /* Navigation */
 
     .navbar {
         flex-direction: column;
@@ -308,12 +506,15 @@ footer {
         justify-content: center;
     }
 
+
+    /*Hero*/
+
     .hero {
         min-height: 550px;
     }
 
     .hero-content {
-        padding: 55px 7%;
+        padding: 50px 7%;
     }
 
     .hero h1 {
@@ -324,37 +525,58 @@ footer {
         font-size: 16px;
     }
 
+
+    /*Main*/
+
     main {
         padding: 60px 7%;
     }
+
+
+    /*Headings*/
 
     h2 {
         font-size: 31px;
     }
 
+
+    /*Paragraph*/
+
     #about > p:first-of-type {
         font-size: 18px;
     }
+
+
+    /*Image*/
 
     .content-image {
         height: 300px;
     }
 
+
+    /*Map*/
+
     .map-section {
-        padding: 35px 25px;
+        padding: 45px 7%;
     }
 
     .map-container {
-        height: 320px;
+        height: 380px;
     }
+
+
+    /*Diversity*/
+
+    #diversity {
+        padding: 35px 25px;
+    }
+
+
+    /*Video*/
 
     .video-section {
         padding: 50px 7%;
     }
 
-    article,
-    .video-section {
-        padding: 25px;
-    }
-
 }
+
