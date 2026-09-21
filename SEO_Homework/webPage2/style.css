@@ -1,0 +1,582 @@
+
+/* INDONESIAN CULTURE WEBSITE*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    background-color: #f4efe6;
+
+    color: #2d2926;
+
+    line-height: 1.8;
+}
+
+
+/*NAVIGATION*/
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background-color: #171513;
+
+    color: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/*Logo*/
+
+.logo {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #f5c66b;
+}
+
+
+/*Navigation links*/
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.nav-links a {
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f5c66b;
+}
+
+
+/*HERO*/
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(20, 14, 10, 0.9),
+            rgba(20, 14, 10, 0.15)
+        ),
+        url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/*Hero text*/
+
+.hero-content {
+    max-width: 900px;
+
+    padding: 80px 8%;
+
+    color: white;
+}
+
+.hero-content::before {
+    content: "CULTURE • TRADITION • IDENTITY";
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #f5c66b;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 82px);
+
+    line-height: 1.05;
+
+    margin: 0 0 20px;
+
+    max-width: 800px;
+}
+
+.hero p {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    max-width: 550px;
+
+    margin-bottom: 30px;
+}
+
+
+/*Hero button*/
+
+.button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background-color: #c92c25;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #a9211d;
+
+    transform: translateY(-2px);
+}
+
+
+/*MAIN CONTENT*/
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 90px 6%;
+}
+
+
+/*ARTICLE*/
+
+article {
+    background-color: transparent;
+
+    padding: 0;
+
+    box-shadow: none;
+}
+
+
+/*Section headings*/
+
+h2 {
+    position: relative;
+
+    color: #a52520;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-top: 20px;
+
+    margin-bottom: 25px;
+
+    padding: 0;
+
+    border: none;
+}
+
+
+/*Small decorative line*/
+
+h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    background-color: #f0b84b;
+
+    margin-top: 12px;
+}
+
+
+/*Paragraphs*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/*First paragraph of article*/
+
+#about > p:first-of-type {
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    max-width: 900px;
+
+    color: #4a4039;
+}
+
+
+/*FOOD IMAGE*/
+
+.content-image {
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    margin: 20px 0 25px;
+
+    border-radius: 0;
+
+    display: block;
+
+    filter: saturate(0.9);
+}
+
+
+/*CULTURAL SECTIONS*/
+
+#food,
+#traditions,
+#diversity {
+    position: relative;
+
+    margin-top: 100px;
+}
+
+
+/*Add visual numbering*/
+#food::before,
+#traditions::before,
+#diversity::before {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #c92c25;
+}
+
+
+/* SPECIAL CULTURE QUOTE*/
+
+#diversity {
+    background-color: #171513;
+
+    color: white;
+
+    padding: 55px;
+
+    margin-top: 100px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#diversity h2 {
+    color: #f5c66b;
+
+    margin-top: 15px;
+}
+
+#diversity p {
+    color: #eeeeee;
+
+    max-width: 850px;
+}
+
+
+/* VIDEO SECTION*/
+
+.video-section {
+    margin-top: 100px;
+
+    padding: 70px 6%;
+
+    background-color: #211d1a;
+
+    color: white;
+
+    position: relative;
+}
+
+
+/*Video heading*/
+
+.video-section h2 {
+    color: #f5c66b;
+
+    margin-top: 0;
+}
+
+.video-section p {
+    color: #dddddd;
+
+    max-width: 650px;
+}
+
+
+/*Video container*/
+
+.video-container {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 40px auto 0;
+    padding-bottom: 56.25%;
+
+    height: 0;
+
+    overflow: hidden;
+
+    background-color: black;
+}
+
+.video-container iframe {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    top: 0;
+
+    left: 0;
+
+    border: none;
+}
+
+
+/* MAP SECTION*/
+
+.map-section {
+    margin-top: 100px;
+    padding: 60px 6%;
+    background-color: #f5c66b;
+    color: #171513;
+}
+
+.map-section h2 {
+    color: #171513;
+    margin-top: 0;
+}
+
+.map-section h2::after {
+    background-color: #c92c25;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 500px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    border: 8px solid #171513;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #c92c25;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #c92c25;
+
+    color: white;
+
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    margin: 5px;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 700px) {
+
+    /* Navigation */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /*Hero*/
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /*Main*/
+
+    main {
+        padding: 60px 7%;
+    }
+
+
+    /*Headings*/
+
+    h2 {
+        font-size: 31px;
+    }
+
+
+    /*Paragraph*/
+
+    #about > p:first-of-type {
+        font-size: 18px;
+    }
+
+
+    /*Image*/
+
+    .content-image {
+        height: 300px;
+    }
+
+
+    /*Map*/
+
+    .map-section {
+        padding: 45px 7%;
+    }
+
+    .map-container {
+        height: 380px;
+    }
+
+
+    /*Diversity*/
+
+    #diversity {
+        padding: 35px 25px;
+    }
+
+
+    /*Video*/
+
+    .video-section {
+        padding: 50px 7%;
+    }
+
+}
+
